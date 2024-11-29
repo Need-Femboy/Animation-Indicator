@@ -145,6 +145,9 @@ public class AnimationIndicatorPlugin extends Plugin
 		} else if (event.getOption().contains("Ignore")) {
 			removeNpcFromConfig(name, npcNames);
 		}
+		else {
+			return;
+		}
 		
 		config.setNpcList(Text.toCSV(npcNames));
 	}
